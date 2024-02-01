@@ -18,11 +18,6 @@ export function App() {
 
   const dispatch = useDispatch();
   const addTestContactsList = () => {
-    /**
-     * initialContacts as test data may be added several times
-     * It checks items and prevents adding if some of initialContacts
-     * are in contacts
-     */
     const newTestContactsList = initialContacts.filter(
       ({ id: newId }) =>
         !contacts
